@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: cursive, sans-serif;
+    /* background-color: orangered; */
 }
 
 .container {
@@ -39,14 +40,21 @@ h2.title {
 img.start {
     /* width: 20px; */
         width: 2rem;
-        background-color: 'yellow';
+        /* background-color: yellow; */
+        background-color: orange;
         border-radius: 50%;
 }
 img.break {
-    width: 20px;
+    /* width: 20px; */
+    width: 2rem;
+    background-color: orange;
+    border-radius: 50%;
 }
 img.stop {
-    width: 20px;
+    /* width: 20px; */
+    width: 2rem;
+    background-color: orange;
+    border-radius: 50%;
 }
 
 @media(min-width: 768px) {

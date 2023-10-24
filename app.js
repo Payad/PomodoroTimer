@@ -35,7 +35,11 @@ function Timer(duration, display) {
         // const breakBtn = document.querySelector('.break');
         // breakBtn.style.display = 'none';
         breakBtn.addEventListener('click', () => {
-            title.innerHTML = 'Break'
+            title.innerHTML = 'Break';
+            title.style.color = 'rgb(255, 255, 255)'
+            // body.style.backgroundColor = 'black';
+            document.getElementsByTagName('body')[0].style.backgroundColor = 'rgb(0, 0, 0)';
+            document.getElementsByClassName('app')[0].style.color = 'rgb(255, 255, 255)';
             clearInterval(timer);
 
             minute = parseInt(time / 60, 10);
@@ -57,6 +61,10 @@ const startBtn = document.querySelector('.start');
 // startBtn.style.backgroundColor = 'yellow';
 startBtn.addEventListener('click', () => {
     title.innerHTML = 'Work';
+    document.getElementsByTagName('body')[0].style.backgroundColor = 'orangered';
+    document.getElementsByClassName('app')[0].style.color = 'rgb(0, 0, 0)';
+    // body.style.backgroundColor = orangered;
+    title.style.color = 'rgb(0, 0, 0)'
     const twentyFive = 60 * 25;
     display = document.querySelector('.digits');
     breakBtn.style.display = 'inline-block';
