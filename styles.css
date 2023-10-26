@@ -43,18 +43,21 @@ img.start {
         /* background-color: yellow; */
         background-color: orange;
         border-radius: 50%;
+        box-shadow: inset 6px 1px grey;
 }
 img.break {
     /* width: 20px; */
     width: 2rem;
     background-color: orange;
     border-radius: 50%;
+    box-shadow: inset 5px 1px grey;
 }
 img.stop {
     /* width: 20px; */
     width: 2rem;
     background-color: orange;
     border-radius: 50%;
+    box-shadow: inset 5px 1px grey;
 }
 
 @media(min-width: 768px) {
@@ -79,10 +82,24 @@ img.stop {
     img.start, img.break, img.stop {
         width: 3rem;
     }
+    img.start {
+        box-shadow: inset 8px 1px grey
+    }
+    img.break, img.stop {
+        box-shadow: inset 7px 1px grey;
+    }
+    /* img.stop {
+        box-shadow: inset 5px 1px grey;
+    } */
+
 }
 
 @media(min-width: 1024px) {
     .timer {
         margin-top: 23%;
+    }
+
+    img.start {
+        box-shadow: inset 8px 1px grey
     }
 }
