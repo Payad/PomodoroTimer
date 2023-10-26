@@ -41,24 +41,24 @@ img.start {
     /* width: 20px; */
         width: 2rem;
         /* background-color: yellow; */
-        background-color: orange;
+        background-color: rgb(255, 165, 0);
         border-radius: 50%;
-        box-shadow: inset 6px 1px grey;
+        box-shadow: inset 6px 1px rgb(128, 128, 128);
 }
-img.break {
+img.break, img.stop {
     /* width: 20px; */
     width: 2rem;
-    background-color: orange;
+    background-color: rgb(255, 165, 0);
     border-radius: 50%;
-    box-shadow: inset 5px 1px grey;
+    box-shadow: inset 5px 1px rgb(128, 128, 128);;
 }
-img.stop {
-    /* width: 20px; */
+/* img.stop {
+    width: 20px;
     width: 2rem;
-    background-color: orange;
+    background-color: rgb(255, 165, 0);
     border-radius: 50%;
-    box-shadow: inset 5px 1px grey;
-}
+    box-shadow: inset 5px 1px rgb(128, 128, 128);
+} */
 
 @media(min-width: 768px) {
     .container {
@@ -83,10 +83,10 @@ img.stop {
         width: 3rem;
     }
     img.start {
-        box-shadow: inset 8px 1px grey
+        box-shadow: inset 8px 1px rgb(128, 128, 128)
     }
     img.break, img.stop {
-        box-shadow: inset 7px 1px grey;
+        box-shadow: inset 7px 1px rgb(128, 128, 128);
     }
     /* img.stop {
         box-shadow: inset 5px 1px grey;
@@ -100,6 +100,6 @@ img.stop {
     }
 
     img.start {
-        box-shadow: inset 8px 1px grey
+        box-shadow: inset 8px 1px rgb(128, 128, 128)
     }
 }
